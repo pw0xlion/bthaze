@@ -8,6 +8,12 @@ Bluetooth BD address & identity spoofing tool for Linux.
 - Sets Class of Device to match the profile
 - One command revert to original
 
+This tool requires **root (superuser) privileges** to modify
+buetooth adapter settings. Without it, the script will fail.
+- **Linux:** `sudo` access
+- **macOS:** `sudo` access (limited — Apple's `bluetoothd` is more restrictive)
+- **Android (rooted):** `su` / Magisk / Termux with root
+
 ## Requirements
 - Linux with BlueZ (`bluetooth` package)
 - `bdaddr` (from BlueZ tools or `bluez-hciutils`)
